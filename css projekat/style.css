@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 500;
+background-color: rgb(155, 208, 226);
+}
+
+a{
+    
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+}
+
+#jedan{
+    padding: 10px;
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid blue;
+    height: 50px;
+}
+
+header{
+    border: 1px solid blue;
+    height: 100vh;
+}
+
+nav h1{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    font-style:italic;
+    border-bottom: 1px solid blue;
+}
+
+nav ul{
+list-style: none;
+}
+
+nav ul li {
+    border-bottom: 1px solid blue;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+nav ul li:hover{
+    background: black;
+    transition: 0.4s ease-in;
+}
+
+main{
+    padding: 50px;
+    max-width: 1600px;
+}
+
+.contact-box{
+    width: 500px;
+    background-color: lightblue;
+    box-shadow: 0 0 20px 0 rgb(128, 118, 118);
+    top: 30%;
+    left:55%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+form{
+    margin: 30px;
+    text-align: center;
+}
+
+.input-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(7, 50, 167);
+}
+
+textarea{
+    resize: none;
+    margin-top: 20px;
+    min-width: 250px;
+    min-height: 80px;
+    max-width: 300px;
+    max-height: 100px;
+    border: 1px solid rgb(7, 50, 167);
+}
+
+#dugme{
+    width: 80px;
+    height: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(7, 50, 167);
+}
+
+
+.animacija{ 
+    position: absolute;
+    top: 500px;
+
+    animation-name: ticket;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ticket {
+    0%{
+        left: 500px;}
+    100%{
+        left: 1200px;}
+}
+
+footer{
+    background-color:black;
+    height: 150px;
+    width: 100vw;
+    padding-top: 40px;
+    color: white;
+    margin-top: auto;
+}
+
+.futer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.socijalneikonice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.socijalneikonice li{
+    margin: 0 10px;
+    list-style: none;
+}
+
+
+.ponude{
+    width: 90%;
+    padding:20px;
+    margin:100px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box{
+    width: 250px;
+    margin:0 10px;
+    transition: 0.6s;
+}
+.box:hover{
+    transform: scale(1.2); 
+}
+
+
+.repertoar{
+    margin-left:300px;
+    margin-top: 100px;
+}
+
+@media screen and (min-width:300px) and (max-width:414px) {
+       
+      header{
+        height: 850px;
+      }
+      .contact-box{
+        width: 240px;
+        top: 30%;
+        left: 68%;
+        
+        
+    }
+    .input-field{
+        width: 200px;
+        height: 40px;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid rgb(7, 50, 167);
+    }
+    textarea{
+        min-width: 150px;
+    }
+
+    footer{
+        padding-top: 15px; 
+    }
+      
+    
+    .ponude{
+        display: block;
+        margin-top: 5px;
+    }
+
+    .repertoar{
+        margin-left: 10px;
+    }
+    @keyframes ticket {
+        0%{
+            left: 200px;}
+        100%{
+            left: 600px;}
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+
+    .repertoar{
+        margin-left: 10px;
+    }
+
+     @keyframes ticket {
+        0%{
+            left: 200px;}
+        100%{
+            left: 500px;}
+    }
+    .ponude{
+        display: block;
+        margin-top: 5px;
+    }
+}
+
